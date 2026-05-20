@@ -169,6 +169,10 @@ body{
 }
 @media screen and (min-width: 500px) {
     .repos-date-div{
-       background-color: aqua;
+       display: none;
+    }
+    #profile_avatar{
+        margin-right: 50px;
     }
 }
+
