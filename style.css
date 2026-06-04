@@ -2,9 +2,19 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: "TitleFont";
+    src: url("./fonts/Early\ Quake\ DEMO.otf");
+}
+@font-face {
+    font-family: "FooterFont";
+    src: url("./fonts/Moralana\ DEMO.otf");
+}
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #4BB8FA;
     min-height: 100vh;
 }
@@ -14,42 +24,32 @@ body{
     align-items: center;
     width: 100%;
     height: 30%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .header-main-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-family: "TitleFont", sans-serif;
+    font-size: 60px;
     font-weight: 700;
+    margin-top: 20px;
 }
 .middle-page-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 450px;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 #hook-sentence{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin-left: 37%;
+    font-family: "FooterFont", sans-serif;
+    font-size: 25px;
     font-style: italic;
 }
 .profiles-search-div{
     width: 50%;
     height: 100%;
-    margin-left: 25%;
-    margin-top: 10px;
-}
-.page-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 5%;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-style: italic;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 .input-button-section{
     display: flex;
@@ -80,13 +80,17 @@ body{
     border-radius: 8px;
     background-color: #134ba5;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "FooterFont", sans-serif;
     font-weight: 700;
     font-size: 18px;
     margin-left: 7px;
     cursor: pointer;
 }
 #results-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 85%;
     background-color: #C4E2F5;
@@ -96,6 +100,8 @@ body{
 }
 .main-info-div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 #profile-avatar{
@@ -104,7 +110,6 @@ body{
     border: 3px solid #3f84f3;
     border-radius: 80px;
     margin-top: 25px;
-    margin-left: 100px;
 }
 #github-username{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -116,10 +121,11 @@ body{
 .more-info-div{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 45%;
     margin-top: 10px;
-    margin-left: 15%;
 }
 #followers{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -133,6 +139,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 50%;
     height: 100%;
 }
@@ -149,6 +156,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 50%;
+    flex-direction: column;
     height: 100%;
 }
 .repos-date-div{
@@ -156,8 +164,6 @@ body{
     flex-direction: column;
     width: 80%;
     height: 50%;
-    margin-left: 50%;
-    margin-top: -40%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
@@ -167,12 +173,20 @@ body{
 #repos-number{
     font-weight: bold;
 }
-@media screen and (min-width: 500px) {
-    .repos-date-div{
-       display: none;
+footer{
+    font-size: 15px;
+    margin-top: 25px;
+    font-family: "FooterFont", sans-serif;
+}
+@media screen and (max-width: 450px) {
+    .header-main-text{
+        font-size: 35px;
     }
-    #profile_avatar{
-        margin-right: 50px;
+    #hook-sentence{
+        font-size: 20px;
+    }
+    #search-button{
+        font-size: 15px;
     }
 }
 
